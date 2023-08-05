@@ -1,0 +1,300 @@
+
+*{
+    display:border-box;
+}
+.fixed-top{
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+}
+.typed{
+    overflow:hidden;
+    white-space:nowrap;
+    /* might change the above element as it keeps the text on one line */
+    width:0;
+    max-width:fit-content;
+    font-size:5rem;
+    border-right:5px solid ;
+    /* our cursor */
+    animation:typing 3.5s steps(20,end) forwards, blinking 0.87s infinite;
+    padding:0;
+    display:inline-block;
+    margin:0 auto;
+    
+    /* ahhh now I remember what is shorthand,this animation is infinite and loop every 1s */
+    
+
+}
+.quote{
+  font-size:2.0rem;
+  font-weight:350;
+}
+
+.column h1{
+    font-size:3.5rem;
+    line-height:3.9rem
+}
+.column p{
+    font-size:1.5rem;
+}
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+
+@keyframes typing{
+    from {width:0}
+    to {width:100%}
+}
+@keyframes blinking{
+    0% {border-color:transparent}
+    50% {border-color:black}
+    100% {border-color:transparent}
+}
+
+.img-banner {
+    /* The image used */
+    background-image: url("../Images/forest.jpg");
+
+    /* Source:I got it from here https://www.reddit.com/r/wallpapers/comments/edn0ju/4k_desktop_wallpaper/ */
+  
+    /* Add the blur effect */
+    /* Full height*/
+    
+    height: 100vh;
+    /* The height is set like that to accomodate for the bgtext and the gaps */
+  
+    /* Center the image nicely the background position is to adjust the background image where it would focus on in the image */
+    background-position:center center;
+    background-repeat: no-repeat;
+    
+    /* background-size:100% 100%; */
+    background-attachment: fixed;
+    background-size:cover;
+    width:100vw;
+
+
+  }
+  
+  .class{
+    width:auto;
+  }
+  .headertext1{
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+  }
+  .content-area{
+    width:100%;
+    height:100vh;
+    background:white;
+    top:100px;
+
+  }
+ 
+@media only screen and (max-width: 500px) {
+    .sidebar{
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter:blur(5px);}
+    }
+
+@media screen and (min-width: 600px) {
+        #header {
+          font-size: 6vh;
+        }
+      }
+      
+      /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 500px) {
+        #header {
+          font-size: 3vh;
+        }
+    }
+    @keyframes blobanimation {
+        0% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+    
+        50% {
+            border-radius: 30% 60% 70% 70% / 60% 30% 70% 40%;
+        }
+    
+        100% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 30% 60%;
+        }
+    }
+    
+        .box {
+            background: url("../Images/earth.jpg");
+              /* Source:I got it form here https://spacenews.com/op-ed-sustainability-on-earth-depends-on-our-exploration-of-space/ */
+
+
+            max-width: 100%;
+            height: 30.0rem;
+            width: 30.0rem;
+            background-size: cover;
+            background-position: center center;
+            box-shadow: 0 20px 5px 5px green;
+            animation: blobanimation 10s ease-in-out infinite;
+            transition: all 1s ease-in-out;
+        }
+        
+        
+        @media screen and (max-width: 600px) {
+            .box {
+                height: 24.0rem;
+                width: 24.0rem;
+            }
+        }
+        @media screen and (max-width: 300px) {
+            .box {
+                height: 22.0rem;
+                width: 22.0rem;
+            }
+        }
+        
+        
+@media screen and (max-width: 250px) {
+        #header {
+          font-size: 1.5vh;
+        }
+      }
+.values{
+    font-size:3.5rem;
+}
+.content-area + .column{
+
+
+
+}
+
+@media (max-width: 990px) {
+  .word {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 692px) {
+  .word {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width:654px){
+  .carousel_caption h5{
+    font-size:1.5rem
+
+  }
+}
+@media (max-width: 497px) {
+  .word {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 300px) {
+  .word {
+    font-size: 1.0rem;
+  }
+}
+
+.nav-item a:hover{
+  filter:blur(0);
+  cursor:pointer;
+  letter-spacing:1px;
+  background: linear-gradient(90deg, rgb(50,50,245),35%,rgb(255,0,231) 100%)
+
+}
+.carousel-caption{
+  bottom:180px;
+}
+.center_carouselh5{
+  font-size:4.5rem;
+}
+footer{
+  position:relative;;
+  width:100%;
+  background:black;
+  min-height:100px;
+  padding:25px 30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+footer .social_icon{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:20px;
+  flex-wrap:wrap;
+
+
+}
+footer .social_icon li{
+  list-style:none;
+}
+footer .social_icon li a{
+  font-size:3em;
+  margin:10px;
+  color:white;
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  
+ 
+  .climatetext{
+    font-size:1.4rem;
+  }
+  .word {
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    font-size: clamp(1.0rem,9vw,4.0rem);
+  }
+  .card{
+    width:500px;
+    height:500px;
+    display:inline-block;
+    border-radius:10px;
+    margin:10px;
+    background-size:cover;
+    background-position:center;
+    background-image:url("https://i.giphy.com/media/l2Je5zDL6SM5pzhbW/giphy.webp");
+    /* https://www.panararmer.co.uk/why-you-sing-better-in-the-shower/
+    Image taken from this website shows a person singing in the shower */
+  
+    transition: transform 0.5s;
+    vertical-align: top;
+    color:white;
+  
+  }
+  .card1{
+    background-image:url(../Images/people_shower.jpg)
+    /* https://www.panararmer.co.uk/why-you-sing-better-in-the-shower/
+    Image taken from this website shows a person singing in the shower */
+  
+  
+  }
+  .card2{
+    background-image:url(../Images/picking_trash.jpg)
+    /* https://www.rawpixel.com/image/430997/premium-photo-image-garbage-activity-bag
+    image taken from this website shows a little girl throwing away trash */
+  
+  }
+  .card3{
+    background-image:url(../Images/MRT.jpg)
+    /* https://sg.news.yahoo.com/yahoo-poll-do-you-think-singapore-needs-a-new-mrt-line-for-the-northnortheast-region-231800592.html
+    image taken from this website shows an mrt train */
+  }
+  .card:hover{
+    transform:scale(1.10);
+  }
+  #container{
+    width:50vw;
+    margin:0 auto;
+  }
+  .opinion_text{
+    line-height:1.1px;
+  }

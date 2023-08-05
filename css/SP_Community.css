@@ -1,0 +1,314 @@
+
+*{
+    display:border-box;
+}
+.fixed-top{
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+}
+.typed{
+    overflow:hidden;
+    white-space:nowrap;
+    /* might change the above element as it keeps the text on one line */
+    width:0;
+    max-width:fit-content;
+    font-size:5rem;
+    border-right:5px solid white ;
+    /* our cursor */
+    animation:typing 3.5s steps(20,end) forwards, blinking 0.87s infinite;
+    padding:0;
+    display:inline-block;
+    margin:0 auto;
+    
+    /* ahhh now I remember what is shorthand,this animation is infinite and loop every 1s */
+    
+
+}
+.quote{
+  font-size:2.0rem;
+  font-weight:350;
+}
+
+.column h1{
+    font-size:3.5rem;
+    line-height:8rem
+}
+.column p{
+    font-size:1.5rem;
+}
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+
+@keyframes typing{
+    from {width:0}
+    to {width:100%}
+}
+@keyframes blinking{
+    0% {border-color:transparent}
+    50% {border-color:black}
+    100% {border-color:transparent}
+}
+
+.img-banner {
+    /* The image used */
+    background-image: linear-gradient(rgba(0,0,0,0.00000000003),rgba(0,00,0.000000000003)),url("../Images/SP_photo.jpg");
+    /* Source:This is where I got it from https://www.sp.edu.sg/sp/about-sp */
+
+  
+    /* Add the blur effect */
+    /* Full height*/
+    
+    height: 100vh;
+    /* The height is set like that to accomodate for the bgtext and the gaps */
+  
+    /* Center the image nicely the background position is to adjust the background image where it would focus on in the image */
+    background-position:center;
+    background-repeat: no-repeat;
+    
+    /* background-size:100% 100%; */
+    background-attachment: fixed;
+    background-size:cover;
+    width:100vw;
+
+
+  }
+  .mt-5{
+    margin-top:6.0rem !important;
+  }
+  
+  .class{
+    width:auto;
+  }
+  .headertext1{
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:black;
+
+  }
+  .content-area{
+    width:100%;
+    height:800px;
+    top:100px;
+    position:relative;
+
+  }
+ 
+@media only screen and (max-width: 500px) {
+    .sidebar{
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter:blur(5px);}
+    }
+
+@media screen and (min-width: 600px) {
+        #header {
+          font-size: 6vh;
+        }
+      }
+      
+      /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 500px) {
+        #header {
+          font-size: 3vh;
+        }
+    }
+    @keyframes blobanimation {
+        0% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+    
+        50% {
+            border-radius: 30% 60% 70% 70% / 60% 30% 70% 40%;
+        }
+    
+        100% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 30% 60%;
+        }
+    }
+    
+        
+        
+        
+        @media screen and (max-width: 600px) {
+            .box {
+                height: 24.0rem;
+                width: 24.0rem;
+            }
+        }
+        @media screen and (max-width: 300px) {
+            .box {
+                height: 22.0rem;
+                width: 22.0rem;
+            }
+        }
+        
+        
+@media screen and (max-width: 250px) {
+        #header {
+          font-size: 1.5vh;
+        }
+      }
+.values{
+    font-size:3.5rem;
+}
+.content-area + .column{
+
+
+
+}
+
+@media (max-width: 990px) {
+  .word {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 692px) {
+  .word {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width:654px){
+  .carousel_caption h5{
+    font-size:1.5rem
+
+  }
+}
+@media (max-width: 497px) {
+  .word {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 300px) {
+  .word {
+    font-size: 1.0rem;
+  }
+}
+
+.nav-item a:hover{
+  filter:blur(0);
+  cursor:pointer;
+  letter-spacing:1px;
+  background: linear-gradient(90deg, rgb(50,50,245),35%,rgb(255,0,231) 100%)
+
+}
+.carousel-caption{
+  bottom:180px;
+}
+.center_carouselh5{
+  font-size:4.5rem;
+}
+footer{
+  position:relative;;
+  width:100%;
+  background:black;
+  min-height:100px;
+  padding:25px 30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+footer .social_icon{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:20px;
+  flex-wrap:wrap;
+
+
+}
+footer .social_icon li{
+  list-style:none;
+}
+footer .social_icon li a{
+  font-size:3em;
+  margin:10px;
+  color:white;
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  
+ 
+  .climatetext{
+    font-size:1.4rem;
+  }
+  .word {
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    font-size: clamp(0.7rem,5vw,5.0rem);
+  }
+  .container{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:100px 50px;
+    padding:100px 50px;
+  }
+  .container .card{
+    position:relative;
+    
+    width:350px;
+    height:450px;
+    background:#fff;
+    border-radius:20px;
+    box-shadow: 0 35px 80px 
+  }
+  .container .card:hover{
+    height: 400px;
+
+
+  }
+  .container .card .imgBx{
+    position: absolute;
+    width:100%;
+    height:250px;
+    background:black;
+    border-radius: 12px;
+    transition:0.5s;
+    overflow:hidden;
+
+  }
+  .container .card:hover .imgBx {
+    top: -100px;
+    scale:0.75;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.5);
+  }
+  .container .card .imgBx img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+  }
+  .container .card .content{
+    position:absolute;
+    text-align:center;
+    padding:0 30px;
+    top:500px;
+    overflow:scroll;
+    height:0;
+    
+    width:fit-content;
+  }
+  .container .card:hover .content{
+    top:130px;
+    height:250px;
+  }
+  .icon:hover{
+    transform: rotateY(360deg);
+    transition: transform .1s;
+
+  }
+
+  
