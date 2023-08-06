@@ -68,13 +68,13 @@
     /* The height is set like that to accomodate for the bgtext and the gaps */
   
     /* Center the image nicely the background position is to adjust the background image where it would focus on in the image */
-    background-position:center center;
+    background-position:center;
     background-repeat: no-repeat;
     
     /* background-size:100% 100%; */
     background-attachment: fixed;
     background-size:cover;
-    width:100vw;
+    width:100%;
 
 
   }
